@@ -161,7 +161,7 @@ figure img:hover,.left_div_reply:hover,
     justify-content: flex-end;
     align-items: flex-start;
     flex-direction: column;
-    background-image: linear-gradient(to bottom, transparent 60%, rgba(208,206,207,0.8)50%), url("/images/my image.jpeg");
+    background-image: linear-gradient(to bottom, transparent 60%, rgba(208,206,207,0.8)50%), url("images/my image.jpeg");
     background-size: var(--bg-size);
 }
 .about_me_div p:first-child{
