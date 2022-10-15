@@ -56,7 +56,7 @@
                                     dolore harum. Nesciunt magnam natus veniam impedit?</p>
                                 <div class="d-flex justify-content-between left_div_btns">
                                     <div>
-                                        <button class="left_div_like" id="like">Like</button>
+                                        <button class="left_div_like" id="like1" onclick="likeFunc('like1')">Like</button>
                                     </div>
                                     <div>
                                         <button class="left_div_reply" onclick="reply('reply1')">
@@ -98,7 +98,7 @@
                                     dolore harum. Nesciunt magnam natus veniam impedit?</p>
                                 <div class="d-flex justify-content-between left_div_btns">
                                     <div>
-                                        <button class="left_div_like" id="like">Like</button>
+                                        <button class="left_div_like" id="like2" onclick="likeFunc('like2')">Like</button>
                                     </div>
                                     <div>
                                         <button class="left_div_reply" onclick="reply('reply2')">
@@ -153,7 +153,7 @@
                                     dolore harum. Nesciunt magnam natus veniam impedit?</p>
                                 <div class="d-flex justify-content-between left_div_btns">
                                     <div>
-                                        <button class="left_div_like" id='like'>Like</button>
+                                        <button class="left_div_like" id='like3' onclick="likeFunc('like3')">Like</button>
                                     </div>
                                     <div>
                                         <button class="left_div_reply" onclick="reply('reply3')">
@@ -363,7 +363,7 @@
         </div>
     </div>
     <footer>
-        <p class="text-center py-4 bg-light">This website belong to Kuldeep Tiwari</p>
+        <p class="text-center py-4 bg-light">This website belong to Kuldeep Tiwari ,Hurray</p>
     </footer>
 
 
@@ -392,7 +392,8 @@
         }
 
         ///////////////// LIKE BUTTON   //////////////
-        const like = document.querySelector('.left_div_like');
+        const likeFunc =(like1) => {
+        var like = document.getElementById(like1);
         const singleClick = () => {
             like.style.fontWeight = "bold";
             like.style.background = "#bbe1fa";
@@ -405,8 +406,6 @@
             like.style.color = "#fff";
             like.innerHTML = "Like";
         }
-        var clickCount = 0;
-        like.addEventListener('click', function () {
             clickCount++;
             if (clickCount === 1) {
                 singleClickTimer = setTimeout(function () {
@@ -418,20 +417,8 @@
                 clickCount = 0;
                 doubleClick();
             }
-        },false)
- //////////////// like num    ////////////
-        // const likeNum = document.querySelector(".likeNum");
-        //     const getLike = document.querySelector("#like")
-
-        // let like = 0;
-        // const increaseLike = () =>{
-        //     like++ ;
-        //     likeNum.innerHTML = `${like}`
-        // }
-        // const likeclick = () =>{
-        //     increaseLike()
-        // }
-        // getLike.addEventListener('click',likeclick)
+}
+var clickCount = 0;
 
 
     </script>
